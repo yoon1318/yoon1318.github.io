@@ -1,6 +1,6 @@
 title: Zero's Dev Blog
 logo: "images/logo.svg" # You can add own logo image.
-description: iOS, ML, 서버, 알고리즘 등을 학습한 것을 공유하고, 매일매일 TIL(Today I Learned)를 남기는 개발 블로그입니다.
+description: iOS, ML, 서버, 알고리즘 등을 학습한 것을 공유하고, 매일매일 TIL(Today I Learned)을 남기는 개발 블로그입니다.
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "https://zerodev.github.io" # The base hostname & protocol for your site, e.g. http://example.com
 
@@ -13,27 +13,27 @@ author:
 twitter: # Add your Twitter handle
 facebook: # Add your Facebook handle
 dribbble: # Add your Dribbble handle
-instagram: https://instagram.com/yoon_1318 # Add your Instagram handle
+instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
-email: yyi9647@google.com # Add your Email address
+email: yyi9647@gmail.com # Add your Email address
 
 # Hero Section
 hero: true # To enable the section hero, use the value true. To turn off use the value false.
-hero-title: Raked Minimalistic Theme # Add your hero title
-hero-subtitle: For those who love simplicity # Add your hero subtitle
-hero-image: images/14.jpg # Add background image in section hero
+hero-title: Zero's Dev Blog # Add your hero title
+hero-subtitle: iOS, 알고리즘 등을 학습한 것을 공유하고, TIL(Today I Learned)을 남기는 개발 블로그입니다.
+hero-image: images/hero.jpg # Add background image in section hero
 
 # Footer
-footer-image: images/14.jpg # Add background image in footer
+footer-image: images/footer.jpg # Add background image in footer
 
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: zero # Add your shortname for Disqus Comment. For example mr-brown
 
 # Google Analytics
 google-analytics: "UA-154969093-1" # Add your identifier. For example UA-99631805-1.
 
 # Newsletter
-mailchimp: "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Build settings
 markdown: kramdown
