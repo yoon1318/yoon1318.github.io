@@ -20,11 +20,11 @@ email: yyi9647@gmail.com # Add your Email address
 # Hero Section
 hero: true # To enable the section hero, use the value true. To turn off use the value false.
 hero-title: Zero's Dev Blog # Add your hero title
-hero-subtitle: iOS, 알고리즘 등을 학습한 것을 공유하고, TIL(Today I Learned)을 남기는 개발 블로그입니다.
-hero-image: images/hero.jpg # Add background image in section hero
+hero-subtitle: iOS, 알고리즘 등을 학습한 것을 공유하고, TIL(Today I Learned)을 기록하는 블로그입니다.
+hero-image: images/hero.JPG # Add background image in section hero
 
 # Footer
-footer-image: images/footer.jpg # Add background image in footer
+footer-image: images/footer.JPG # Add background image in footer
 
 # Comment Section (Disqus)
 disqus-identifier: zero # Add your shortname for Disqus Comment. For example mr-brown
