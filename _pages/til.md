@@ -9,7 +9,7 @@ image:
 
 1. Github blog 개설
 * [Reked jekyll theme](https://github.com/artemsheludko/reked)를 이용하여 제작
-* [Zero's Dev Blog](https://yoon1318.github.io)
+* [Zero's Dev Blog](https://zerios.dev)
 
 2. 게시물 작성
 * [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://zerios.dev/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기/)
