@@ -2,7 +2,7 @@ title: Zero's Dev Blog
 logo: "images/logo.svg" # You can add own logo image.
 description: iOS, ML, 서버, 알고리즘 등을 학습한 것을 공유하고, 매일매일 TIL(Today I Learned)을 남기는 개발 블로그입니다.
 baseurl: "/blog" # The subpath of your site, e.g. /blog
-url: "https://www.youngil.online" # The base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.zerios.dev" # The base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
 author:
