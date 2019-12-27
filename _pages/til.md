@@ -12,7 +12,7 @@ image:
 * [Zero's Dev Blog](https://zerios.dev)
 
 2. 게시물 작성
-* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://zerios.dev/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기/)
+* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://zerios.dev/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기)
 
 3. iOS VIPER template 다시 생성
 * iOS 12 이하 버전에 맞게 변경
@@ -21,7 +21,6 @@ image:
 4. Project WP
 * Google Concole 계정 만들고 Google Map API 간단하게 불러오기까지 진행
 * Image Clusturing 하고 대표 이미지 보여주는 것 진행 해야 함
-
 
 ***
 
