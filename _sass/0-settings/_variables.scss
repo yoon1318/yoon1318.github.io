@@ -12,11 +12,13 @@ $base-spacing-unit: 20px;
 $brand-color: #d8534f;
 $dark: #212121;
 $gray: #7f7f7f;
+$blue: #45b5fb;
 $light-gray: #eee;
+$white: #fff;
 
 
 // Background Colors
-$background-color: #fff;
+$background-color: $white;
 
 // Body Color
 $text-color: $dark;
@@ -26,7 +28,7 @@ $heading-font-color: $dark;
 
 // Links
 $link-color: $dark;
-$link-color-hover: darken($dark, 15%);
+$link-color-hover: darken($blue, 15%);
 
 // Border
 $border-color: $light-gray;
@@ -39,7 +41,7 @@ $base-font-size: 15px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Merriweather', serif;
+$base-font-family: 'NanumGothicCoding', serif;
 $base-line-height: 26px;
 
 // Headings
