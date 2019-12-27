@@ -12,7 +12,7 @@ image:
 * [Zero's Dev Blog](https://yoon1318.github.io)
 
 2. 게시물 작성
-* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://yoon1318.github.io/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기/)
+* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://zerios.dev/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기/)
 
 3. iOS VIPER template 다시 생성
 * iOS 12 이하 버전에 맞게 변경
