@@ -11,6 +11,9 @@ image:
 
 #### 1. 빠른 시일 내에 다룰 것
 * UIView에 그라데이션 넣는 방법
+* 커스텀 이미지, 폰트 설정 방법
+* UIScrollView를 이용해서 횡스크롤 이미지 뷰 설정
+* UICollectionView 활용 방법
 
 ---
 
