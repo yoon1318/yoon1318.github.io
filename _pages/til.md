@@ -5,6 +5,17 @@ permalink: /til/
 image: 
 ---
 
+#### 2019. 12. 29.
+
+1. 게시물 작성
+* [헥사코드로 UIColor 정의하기]({{site.baseurl}}/2019/12/29/헥사코드로-UIColor-정의하기)
+* [UIView에 그라데이션 효과 넣기]({{site.baseurl}}/2019/12/29/UIView에-그라데이션-효과-넣기)
+
+2. Project WP
+* 
+
+***
+
 #### 2019. 12. 28.
 
 1. Project WP
@@ -34,10 +45,10 @@ image:
 
 1. Github blog 개설
 * [Reked jekyll theme](https://github.com/artemsheludko/reked)를 이용하여 제작
-* [Zero's Dev Blog](https://zerios.dev)
+* [Zero's Dev Blog]({{site.baseurl}}/)
 
 2. 게시물 작성
-* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기](https://zerios.dev/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기)
+* [Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기]({{site.baseurl}}/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기)
 
 3. iOS VIPER template 다시 생성
 * iOS 12 이하 버전에 맞게 변경

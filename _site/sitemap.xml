@@ -5,6 +5,14 @@
 <lastmod>2019-12-26T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2019/12/29/UIView%EC%97%90-%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0/</loc>
+<lastmod>2019-12-29T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/12/29/%ED%97%A5%EC%82%AC%EC%BD%94%EB%93%9C%EB%A1%9C-UIColor-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0/</loc>
+<lastmod>2019-12-29T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -21,5 +29,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/tag/xcode/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tag/swift/</loc>
 </url>
 </urlset>
