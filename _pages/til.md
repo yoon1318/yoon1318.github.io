@@ -5,6 +5,12 @@ permalink: /til/
 image: 
 ---
 
+#### 2019. 12. 30.
+
+1. Project WP
+* Custom UICollectionViewCell 생성
+* Google Map에 custom marker 넣는 문제 진행 중
+
 #### 2019. 12. 29.
 
 1. 게시물 작성
@@ -12,7 +18,7 @@ image:
 * [UIView에 그라데이션 효과 넣기]({{site.baseurl}}/2019/12/29/UIView에-그라데이션-효과-넣기)
 
 2. Project WP
-* 
+* Google Map에 custom marker 넣는 방법 해결해야 함
 
 ***
 
@@ -73,4 +79,5 @@ image:
 3. Project WP 시작
 * Xcode로 프로젝트 만들고 iOS12에도 작동하도록 파일 변경
 * Gradient 넣는 작업 수행
+    * [UIView에 그라데이션 효과 넣기]({{site.baseurl}}/2019/12/29/UIView에-그라데이션-효과-넣기)
 * 로그인 페이지 제작 시작
