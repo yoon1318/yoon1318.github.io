@@ -5,6 +5,13 @@ permalink: /til/
 image: 
 ---
 
+#### 2019. 12. 31.
+
+1. Project WP
+* Google Map에 custom marker 넣는 문제 해결
+* Gradient 관련 이슈 발생
+* Custom Tab Bar 생성 중
+
 #### 2019. 12. 30.
 
 1. Project WP
