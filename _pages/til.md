@@ -5,6 +5,13 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 1.
+
+1. Project WP
+* iOS Zeplin template에 맞춰 레이아웃 변경
+* 벡터 이미지 전환
+* Custum Back버튼 생성
+
 #### 2019. 12. 31.
 
 1. Project WP
