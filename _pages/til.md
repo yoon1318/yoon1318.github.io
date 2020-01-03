@@ -5,6 +5,14 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 2.
+
+1. Project WP
+* iPhone 6와 iPhone XR에 맞춰 UI 수정
+* iPhone XR(iOS13.3)에서는 정상적으로 작동하지만, iPhone 6(iOS12.4)에선 작동하지 않는 문제들 해결
+* MapViewMarker 이미지 수정
+* 사소한 레이어들 추가
+
 #### 2020. 1. 1.
 
 1. Project WP
