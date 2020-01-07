@@ -5,6 +5,18 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 6.
+
+1. Project WP
+* `MSPeekCollectionViewDelegateImplementation` 활용하여 컬렉션 뷰 만드는 중
+
+#### 2020. 1. 5.
+
+1. Project WP
+* 간단한 레이아웃 수정
+
+***
+
 #### 2020. 1. 4.
 
 1. Project WP
@@ -12,18 +24,24 @@ image:
 * 전체 레이아웃, UI 수정
 * 뷰간 트랜지션 일부 정의
 
+***
+
 #### 2020. 1. 3.
 
 1. Project WP
 * 회원가입 뷰 생성
+
+***
 
 #### 2020. 1. 2.
 
 1. Project WP
 * iPhone 6와 iPhone XR에 맞춰 UI 수정
 * iPhone XR(iOS13.3)에서는 정상적으로 작동하지만, iPhone 6(iOS12.4)에선 작동하지 않는 문제들 해결
-* MapViewMarker 이미지 수정
+* `MapViewMarker` 이미지 수정
 * 사소한 레이어들 추가
+
+***
 
 #### 2020. 1. 1.
 
@@ -32,6 +50,8 @@ image:
 * 벡터 이미지 전환
 * Custum Back버튼 생성
 
+***
+
 #### 2019. 12. 31.
 
 1. Project WP
@@ -39,11 +59,15 @@ image:
 * Gradient 관련 이슈 발생
 * Custom Tab Bar 생성 중
 
+***
+
 #### 2019. 12. 30.
 
 1. Project WP
-* Custom UICollectionViewCell 생성
+* Custom `UICollectionViewCell` 생성
 * Google Map에 custom marker 넣는 문제 진행 중
+
+***
 
 #### 2019. 12. 29.
 
@@ -76,8 +100,8 @@ image:
 * 댓글 기능은 나중에 넣자
 
 2. Project WP
-* UIScrollView 이용하여 페이지 넘김 형식의 이미지 뷰 구성
-* UICollectionView 이용하여 횡스크롤 이미지 뷰 구성
+* `UIScrollView` 이용하여 페이지 넘김 형식의 이미지 뷰 구성
+* `UICollectionView` 이용하여 횡스크롤 이미지 뷰 구성
 
 ***
 
