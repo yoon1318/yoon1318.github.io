@@ -5,6 +5,18 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 7.
+
+1. Project WP
+* 이메일을 이용한 로그인 기능 서버와 연동
+* 회원가입 기능 서버와 연동
+* Observer를 이용하여 키보드 움직임 확인
+* MVC, MVP, MVVC, VIPER 등의 디자인 패턴을 공부하고, VIPER 모델을 사용하기로 결정
+* `Alamofire`, `SwiftyJSON` 활용
+* 정규표현식을 이용한 문자열 타당성 검사
+
+***
+
 #### 2020. 1. 6.
 
 1. Project WP
