@@ -5,6 +5,14 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 8.
+
+1. Notion
+* Notion 학습
+* 당근마켓 등의 사례를 참고하여 회사 Notion 제작
+
+***
+
 #### 2020. 1. 7.
 
 1. Project WP
@@ -21,6 +29,8 @@ image:
 
 1. Project WP
 * `MSPeekCollectionViewDelegateImplementation` 활용하여 컬렉션 뷰 만드는 중
+
+***
 
 #### 2020. 1. 5.
 
