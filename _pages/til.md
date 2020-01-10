@@ -5,6 +5,17 @@ permalink: /til/
 image: 
 ---
 
+#### 2020. 1. 9.
+
+1. 웹 크롤링
+* 카메라, 스마트폰 정보 웹 크롤링
+
+2. Project WP
+* 자동 로그인 구현
+* TabBar Protocol 구현
+
+***
+
 #### 2020. 1. 8.
 
 1. Notion
