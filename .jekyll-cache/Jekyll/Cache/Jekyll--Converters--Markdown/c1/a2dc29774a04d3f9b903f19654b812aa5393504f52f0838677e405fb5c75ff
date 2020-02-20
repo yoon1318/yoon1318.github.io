@@ -1,0 +1,292 @@
+I"r<h4 id="2020-1-11">2020. 1. 11.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>사진 업로드 뷰 생성</li>
+      <li>사진 갤러리에서 사진 정보 받아오는 기능 구현</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-10">2020. 1. 10.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>탭 바에 대한 프로토콜 개선 및 자연스로운 이동 구현</li>
+      <li>마이페이지 조회, 카메라 조회 및 등록 기능 구현</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-9">2020. 1. 9.</h4>
+
+<ol>
+  <li>웹 크롤링
+    <ul>
+      <li>카메라, 스마트폰 정보 웹 크롤링</li>
+    </ul>
+  </li>
+  <li>Project WP
+    <ul>
+      <li>자동 로그인 구현</li>
+      <li>TabBar Protocol 구현</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-8">2020. 1. 8.</h4>
+
+<ol>
+  <li>Notion
+    <ul>
+      <li>Notion 학습</li>
+      <li>당근마켓 등의 사례를 참고하여 회사 Notion 제작</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-7">2020. 1. 7.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>이메일을 이용한 로그인 기능 서버와 연동</li>
+      <li>회원가입 기능 서버와 연동</li>
+      <li>Observer를 이용하여 키보드 움직임 확인</li>
+      <li>MVC, MVP, MVVC, VIPER 등의 디자인 패턴을 공부하고, VIPER 모델을 사용하기로 결정</li>
+      <li><code class="highlighter-rouge">Alamofire</code>, <code class="highlighter-rouge">SwiftyJSON</code> 활용</li>
+      <li>정규표현식을 이용한 문자열 타당성 검사</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-6">2020. 1. 6.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li><code class="highlighter-rouge">MSPeekCollectionViewDelegateImplementation</code> 활용하여 컬렉션 뷰 만드는 중</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-5">2020. 1. 5.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>간단한 레이아웃 수정</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-4">2020. 1. 4.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>간단한 개발자 회의</li>
+      <li>전체 레이아웃, UI 수정</li>
+      <li>뷰간 트랜지션 일부 정의</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-3">2020. 1. 3.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>회원가입 뷰 생성</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-2">2020. 1. 2.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>iPhone 6와 iPhone XR에 맞춰 UI 수정</li>
+      <li>iPhone XR(iOS13.3)에서는 정상적으로 작동하지만, iPhone 6(iOS12.4)에선 작동하지 않는 문제들 해결</li>
+      <li><code class="highlighter-rouge">MapViewMarker</code> 이미지 수정</li>
+      <li>사소한 레이어들 추가</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2020-1-1">2020. 1. 1.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>iOS Zeplin template에 맞춰 레이아웃 변경</li>
+      <li>벡터 이미지 전환</li>
+      <li>Custum Back버튼 생성</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-31">2019. 12. 31.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>Google Map에 custom marker 넣는 문제 해결</li>
+      <li>Gradient 관련 이슈 발생</li>
+      <li>Custom Tab Bar 생성 중</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-30">2019. 12. 30.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>Custom <code class="highlighter-rouge">UICollectionViewCell</code> 생성</li>
+      <li>Google Map에 custom marker 넣는 문제 진행 중</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-29">2019. 12. 29.</h4>
+
+<ol>
+  <li>게시물 작성
+    <ul>
+      <li><a href="/2019/12/29/헥사코드로-UIColor-정의하기">헥사코드로 UIColor 정의하기</a></li>
+      <li><a href="/2019/12/29/UIView에-그라데이션-효과-넣기">UIView에 그라데이션 효과 넣기</a></li>
+    </ul>
+  </li>
+  <li>Project WP
+    <ul>
+      <li>Google Map에 custom marker 넣는 방법 해결해야 함</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-28">2019. 12. 28.</h4>
+
+<ol>
+  <li>Project WP
+    <ul>
+      <li>메인 뷰 기본적인 틀 잡기</li>
+      <li>커스텀 폰트 적용</li>
+      <li>뷰간 트랜지션 생성</li>
+      <li>My 뷰 생성</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-27">2019. 12. 27.</h4>
+
+<ol>
+  <li>블로그 수정 작업
+    <ul>
+      <li>메인 글자체 변경 (<a href="https://hangeul.naver.com/2017/nanum">나눔 고딕</a>)</li>
+      <li>하이퍼링크 색깔 변경</li>
+      <li>한글 자모분리 오류 해결</li>
+      <li>태그 기능이 local에서는 작동하는데 온라인에서 안되는 문제 해결 해야 함</li>
+      <li>댓글 기능은 나중에 넣자</li>
+    </ul>
+  </li>
+  <li>Project WP
+    <ul>
+      <li><code class="highlighter-rouge">UIScrollView</code> 이용하여 페이지 넘김 형식의 이미지 뷰 구성</li>
+      <li><code class="highlighter-rouge">UICollectionView</code> 이용하여 횡스크롤 이미지 뷰 구성</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-26">2019. 12. 26.</h4>
+
+<ol>
+  <li>Github blog 개설
+    <ul>
+      <li><a href="https://github.com/artemsheludko/reked">Reked jekyll theme</a>를 이용하여 제작</li>
+      <li><a href="/">Zero’s Dev Blog</a></li>
+    </ul>
+  </li>
+  <li>게시물 작성
+    <ul>
+      <li><a href="/2019/12/26/Xcode-11로-iOS-12-이하-버전의-프로젝트-생성하기">Xcode 11로 iOS 12 이하 버전의 프로젝트 생성하기</a></li>
+    </ul>
+  </li>
+  <li>iOS VIPER template 다시 생성
+    <ul>
+      <li>iOS 12 이하 버전에 맞게 변경</li>
+      <li>Github repository : <a href="https://github.com/yoon1318/ios-viper-template">ios-viper-template</a></li>
+    </ul>
+  </li>
+  <li>Project WP
+    <ul>
+      <li>Google Concole 계정 만들고 Google Map API 간단하게 불러오기까지 진행</li>
+      <li>Image Clusturing 하고 대표 이미지 보여주는 것 진행 해야 함</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="2019-12-25">2019. 12. 25.</h4>
+
+<ol>
+  <li>Single cycle mips 제작
+    <ul>
+      <li>컴퓨터구조 과제</li>
+    </ul>
+  </li>
+  <li>iOS VIPER template 제작
+    <ul>
+      <li>VIPER 구조와 extension들 몇 개 추가</li>
+      <li>iOS 12에 맞게 변경 필요</li>
+      <li>Github repository : <a href="https://github.com/yoon1318/ios-viper-template">ios-viper-template</a></li>
+    </ul>
+  </li>
+  <li>Project WP 시작
+    <ul>
+      <li>Xcode로 프로젝트 만들고 iOS12에도 작동하도록 파일 변경</li>
+      <li>Gradient 넣는 작업 수행</li>
+    </ul>
+    <ul>
+      <li><a href="/2019/12/29/UIView에-그라데이션-효과-넣기">UIView에 그라데이션 효과 넣기</a>
+    * 로그인 페이지 제작 시작</li>
+    </ul>
+  </li>
+</ol>
+:ET

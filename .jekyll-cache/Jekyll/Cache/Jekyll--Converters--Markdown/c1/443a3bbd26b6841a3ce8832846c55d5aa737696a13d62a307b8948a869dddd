@@ -1,0 +1,142 @@
+I"�<p>(본 게시글은 iOS 생명주기와 관련된 게시물 중 네번째인 <strong><code class="highlighter-rouge">AppDelegate</code> &amp; <code class="highlighter-rouge">SceneDelegate</code></strong>에 대해 다루고 있습니다.)</p>
+
+<p>Xcode 11 업데이트 이후 프로젝트를 생성하면 <code class="highlighter-rouge">SceneDelegate.swift</code> 파일이 추가로 생성됩니다. 이번 게시물에서는 왜 <code class="highlighter-rouge">SceneDelegate</code>가 필요해졌는지, 그리고 기존의 <code class="highlighter-rouge">AppDelegate</code>에서 어떤 부분이 바뀌었는지 정리해보겠습니다.</p>
+
+<hr />
+
+<h4 id="multi-window">Multi Window</h4>
+<ul>
+  <li>최신 버전의 아이패드부터는 멀티 윈도우라는 개념이 도입되어 하나의 앱을 여러 개 띄울 수 있게 되었습니다.</li>
+  <li>예를 들어, 각각 다른 사이트에 접속된 Safari 앱을 여러 개 띄운다던가, 각종 앱들 옆에 split view로 메모 앱을 각각 띄우는게 가능해졌죠.</li>
+  <li>이때, 각각의 윈도우를 따로 관리해줘야할 필요가 생겼고 따라서 <code class="highlighter-rouge">SceneDelegate</code>가 도입됩니다.</li>
+</ul>
+
+<hr />
+
+<h4 id="scene">Scene</h4>
+<ul>
+  <li>기존의 앱에서는 ‘하나의 프로세스’는 ‘하나의 UI’만 가졌기 때문에 <code class="highlighter-rouge">AppDelegate</code>가 Process Lifecycle과 UI Lifecycle을 모두 담당했습니다.</li>
+  <li>하지만 iOS 13부터는 하나의 앱 내에서 같은 프로세스를 공유하는 여러 개의 <code class="highlighter-rouge">scene</code>이 존재할 수 있게 됩니다.</li>
+  <li>따라서 Process Lifecycle은 <code class="highlighter-rouge">AppDelegate</code>가, UI Lifecycle은 <code class="highlighter-rouge">SceneDelegate</code>가 나눠갖게 됩니다.</li>
+</ul>
+
+<hr />
+
+<h4 id="appdelegate에서의-변화">AppDelegate에서의 변화</h4>
+<ol>
+  <li><strong>window가 사라짐</strong>
+    <ul>
+      <li>앱 내에서 여러 개의 <code class="highlighter-rouge">window</code>나 <code class="highlighter-rouge">UISceneSession</code>을 띄울 수 있기 때문에 <code class="highlighter-rouge">AppDelegate</code>에서 <code class="highlighter-rouge">window</code> 개체가 사라졌습니다.</li>
+    </ul>
+  </li>
+  <li><strong>Process Lifecycle</strong>
+    <ol>
+      <li><code class="highlighter-rouge">application(_:willFinishLaunchingWithOptions:)</code>
+        <ul>
+          <li>앱이 최초로 실행될 때 호출</li>
+          <li>기존에는 <code class="highlighter-rouge">UIWindow</code> 객체를 만들어 <code class="highlighter-rouge">UIViewController</code> 인스턴스를 할당하는 등의 작업을 했지만, 앱에서 <code class="highlighter-rouge">scene</code>을 사용하는 경우엔 더이상 그런 작업들을 수행하지 않습니다.</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">application(_:configurationForConnecting:options:)</code>
+        <ul>
+          <li>앱에서 새로운 <code class="highlighter-rouge">scene</code> 또는 ‘window`를 제공할 때 호출</li>
+        </ul>
+      </li>
+      <li><code class="highlighter-rouge">application(_:didDiscardSceneSessions:)</code>
+        <ul>
+          <li>사용자가 <code class="highlighter-rouge">scene</code>을 버릴 때 호출</li>
+          <li>ex. 멀티태스킹 UI를 통해 앱을 제거한 경우</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li><strong>UI Lifecycle</strong>
+    <ul>
+      <li>해당 앱이 iOS 13 이상을 지원하고 새로운 Scene Lifecycle을 채택하면 기존에 <code class="highlighter-rouge">AppDelegate</code>에 있던 UI Lifecycle 관련 method들의 사용이 중지됩니다.</li>
+      <li><code class="highlighter-rouge">AppDelegate</code>의 method와 <code class="highlighter-rouge">SceneDelegate</code>에 새로 생긴 UI Lifecycle method가 1:1로 매치되기 때문에 기존의 사용 방식에서 크게 달라지지는 않았습니다.</li>
+      <li><img src="/images/2020-02-20/match.jpg" alt="match" /></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="scenedelegate">SceneDelegate</h4>
+<ul>
+  <li>앱의 상태변화가 일어나면 <code class="highlighter-rouge">UIApplicationDelegate</code>를 통해 이벤트가 전달됩니다.</li>
+  <li><code class="highlighter-rouge">UIApplicationDelegate</code>를 참조하는 <code class="highlighter-rouge">AppDelegate</code> 객체에서 상태 변화에 따른 작업을 정의할 수 있습니다.</li>
+</ul>
+
+<ol>
+  <li><strong><code class="highlighter-rouge">application(_:willFinishLaunchingWithOptions:)</code></strong>
+    <ul>
+      <li>앱이 최초로 실행될 때 호출 (Not Running)</li>
+      <li>주로 앱 실행 시 최초로 실행할 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">application(_:didFinishLaunchingWithOptions:)</code></strong>
+    <ul>
+      <li>앱이 실행되고 사용자에게 화면이 보이기 직전에 호출 (Not Running → Inactive)</li>
+      <li>주로 앱 실행 후에 최종 초기화 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationDidBecomeActive(_:)</code></strong>
+    <ul>
+      <li>앱이 Active 상태로 전횐된 직후 호출 (Inactive → Active)</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillResignActive(_:)</code></strong>
+    <ul>
+      <li>앱이 Inactive 상태로 전환되기 직전 호출 (Active → Inactive)</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationDidEnterBackground(_:)</code></strong>
+    <ul>
+      <li>앱이 Background 상태로 전환된 직후 호출 (Inactive → Background)</li>
+      <li>특별한 처리가 없으면 Suspended 상태로 전환됩니다.</li>
+      <li>주로 앱이 종료되기 전에 중요 데이터를 저장하거나 공유 자원을 해제하는 등을 위한 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillEnterForeground(_:)</code></strong>
+    <ul>
+      <li>앱이 Background에서 Foreground로 돌아오기 직전 호출 (Background → Foreground)</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillTerminate(_:)</code></strong>
+    <ul>
+      <li>앱이 종료되기 직전 호출</li>
+      <li>다음과 같은 경우에는 호출되지 않습니다.
+        <ol>
+          <li>메모리 확보를 위해 iOS 시스템에 의해 앱이 종료된 경우</li>
+          <li>사용자가 멀티태스킹 UI를 통해 종료한 경우</li>
+          <li>오류로 인해 앱이 종료된 경우</li>
+          <li>기기를 재부팅한 경우</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<p><img src="/images/2020-02-20/app_based_state_transition_2.jpeg" alt="app_based_state_transition" /></p>
+
+<hr />
+
+<h5 id="reference">Reference</h5>
+<ul>
+  <li><a href="https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle">Managing Your App’s Life Cycle</a></li>
+  <li><a href="https://developer.apple.com/videos/play/wwdc2019/258/">Architecting Your App for Multiple Windows</a></li>
+  <li><a href="https://zeddios.tistory.com/811">SceneDelegate (1) - Architecting Your App for Multiple Windows</a></li>
+</ul>
+
+<hr />
+
+<h5 id="ios-앱-생명주기">iOS 앱 생명주기</h5>
+<ol>
+  <li><a href="/2020/02/20/iOS-앱-생명주기">iOS 앱 생명주기</a></li>
+  <li><a href="/2020/02/20/앱의-상태변화-&amp;-Delegate-Call">앱의 상태변화 &amp; Delegate Call</a></li>
+  <li><a href="">View Controller 생명주기</a></li>
+  <li><a href="/2020/02/20/AppDelegate-&amp;-SceneDelegate"><strong>AppDelegate &amp; SceneDelegate</strong></a></li>
+</ol>
+:ET

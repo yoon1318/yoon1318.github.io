@@ -1,8 +1,8 @@
 ---
-layout: page
-title: TIL
-permalink: /til/
-image: 
+# layout: page
+# title: TIL
+# permalink: /til/
+# image: 
 ---
 
 #### 2020. 1. 11.

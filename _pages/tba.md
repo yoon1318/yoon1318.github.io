@@ -1,8 +1,8 @@
 ---
-layout: page
-title: TBA
-permalink: /tba/
-image: 
+# layout: page
+# title: TBA
+# permalink: /tba/
+# image: 
 ---
 
 작성 예정인 포스트들의 목록입니다.

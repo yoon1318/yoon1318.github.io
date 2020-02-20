@@ -1,9 +1,33 @@
 [
   
     {
+      "title"    : "앱의 상태변화 &amp; Delegate Call",
+      "category" : "",
+      "tags"     : "iOS",
+      "url"      : "/2020/02/20/%EC%95%B1%EC%9D%98-%EC%83%81%ED%83%9C%EB%B3%80%ED%99%94-&-Delegate-Call/",
+      "date"     : "2020-02-20 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "iOS 앱 생명주기",
+      "category" : "",
+      "tags"     : "iOS",
+      "url"      : "/2020/02/20/iOS-%EC%95%B1-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0/",
+      "date"     : "2020-02-20 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "AppDelegate &amp; SceneDelegate",
+      "category" : "",
+      "tags"     : "iOS",
+      "url"      : "/2020/02/20/AppDelegate-&-SceneDelegate/",
+      "date"     : "2020-02-20 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "헥사코드로 UIColor 정의하기",
       "category" : "",
-      "tags"     : "iOS and Swift",
+      "tags"     : "Swift",
       "url"      : "/2019/12/29/%ED%97%A5%EC%82%AC%EC%BD%94%EB%93%9C%EB%A1%9C-UIColor-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0/",
       "date"     : "2019-12-29 00:00:00 +0900"
     } ,
@@ -11,7 +35,7 @@
     {
       "title"    : "UIView에 그라데이션 효과 넣기",
       "category" : "",
-      "tags"     : "iOS and Swift",
+      "tags"     : "Swift",
       "url"      : "/2019/12/29/UIView%EC%97%90-%EA%B7%B8%EB%9D%BC%EB%8D%B0%EC%9D%B4%EC%85%98-%ED%9A%A8%EA%B3%BC-%EB%84%A3%EA%B8%B0/",
       "date"     : "2019-12-29 00:00:00 +0900"
     } ,

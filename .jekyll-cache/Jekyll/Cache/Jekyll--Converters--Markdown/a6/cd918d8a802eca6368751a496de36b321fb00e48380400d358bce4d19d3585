@@ -1,0 +1,131 @@
+I"�<p>(본 게시글은 iOS 앱 생명주기와 관련된 게시물 중 두번째인 <strong>앱의 상태변화 &amp; <code class="highlighter-rouge">Delegate Call</code></strong>에 대해 다루고 있습니다.)</p>
+
+<p>이번 게시물에서는 앱이 갖는 상태의 종류와 변화하는 과정, 그리고 상태변화 시 호출되는 method들에 대해 정리해보겠습니다.</p>
+
+<hr />
+
+<h4 id="app-state">App State</h4>
+<ol>
+  <li><strong>Not Running</strong>
+    <ul>
+      <li>앱이 아직 실행되지 않았거나 종료된 상태</li>
+    </ul>
+  </li>
+  <li><strong>Inactive</strong>
+    <ul>
+      <li>앱이 실행중(Foreground 상태)이지만 이벤트를 받고있지 않는 상태</li>
+      <li>Active 상태로 넘어가기 동안 짧게 이 상태에 머무른다.</li>
+    </ul>
+  </li>
+  <li><strong>Active</strong>
+    <ul>
+      <li>앱이 실행중(Foreground 상태)이고 이벤트를 받고있는 상태</li>
+      <li>앱이 실질적으로 활동하고 있는 상태이며 대부분의 Foreground 상태에 있는 앱들은 이 상태에 머무른다.</li>
+    </ul>
+  </li>
+  <li><strong>Background</strong>
+    <ul>
+      <li>앱이 백그라운드에서 실질적인 동작을 하고 있는 상태</li>
+      <li>Suspended 상태로 넘어가기 전에 잠깐 머무르며, 추가적인 코드 수행이 필요하면 더 머무를 수도 있다.</li>
+    </ul>
+  </li>
+  <li><strong>Suspended</strong>
+    <ul>
+      <li>백그라운드에서 활동을 멈춘 상태</li>
+      <li>다시 앱을 실행했을 때 빨리 실행되게 하기 위해 메모리에 적재되어 있으나, 실질적인 코드를 수행하진 않는다.</li>
+      <li>메모리가 부족한 경우 iOS 시스템은 해당 상테에 있는 앱들을 종료함으로써 메모리를 확보한다.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="delegate-call">Delegate Call</h4>
+<ul>
+  <li>앱의 상태변화가 일어나면 <code class="highlighter-rouge">UIApplicationDelegate</code>를 통해 이벤트가 전달됩니다.</li>
+  <li><code class="highlighter-rouge">UIApplicationDelegate</code>를 참조하는 <code class="highlighter-rouge">AppDelegate</code> 객체에서 상태 변화에 따른 작업을 정의할 수 있습니다.</li>
+  <li><code class="highlighter-rouge">Delegate Call</code>은 앱의 실행과 종료를 처리하는 <strong>Process Lifecycle</strong>과 UI의 상태를 처리하는 <strong>UI Lifecycle</strong>로 나누어집니다.</li>
+</ul>
+
+<hr />
+
+<h5 id="1-process-lifecycle">1. Process Lifecycle</h5>
+<ol>
+  <li><strong><code class="highlighter-rouge">application(_:willFinishLaunchingWithOptions:)</code></strong>
+    <ul>
+      <li>앱이 최초로 실행될 때 호출 (Not Running)</li>
+      <li>주로 앱 실행 시 최초로 실행할 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">application(_:didFinishLaunchingWithOptions:)</code></strong>
+    <ul>
+      <li>앱이 실행되고 사용자에게 화면이 보이기 직전에 호출 (Not Running → Inactive)</li>
+      <li>주로 앱 실행 후에 최종 초기화 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillTerminate(_:)</code></strong>
+    <ul>
+      <li>앱이 종료되기 직전 호출</li>
+      <li>다음과 같은 경우에는 호출되지 않습니다.
+        <ol>
+          <li>메모리 확보를 위해 iOS 시스템에 의해 앱이 종료된 경우 (Suspended 상태인 경우)</li>
+          <li>사용자가 멀티태스킹 UI를 통해 종료한 경우</li>
+          <li>오류로 인해 앱이 종료된 경우</li>
+          <li>기기를 재부팅한 경우</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h5 id="2-ui-lifecycle">2. UI Lifecycle</h5>
+<ol>
+  <li><strong><code class="highlighter-rouge">applicationDidBecomeActive(_:)</code></strong>
+    <ul>
+      <li>앱이 Active 상태로 전횐된 직후 호출 (Inactive → Active)</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillResignActive(_:)</code></strong>
+    <ul>
+      <li>앱이 Inactive 상태로 전환되기 직전 호출 (Active → Inactive)</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationDidEnterBackground(_:)</code></strong>
+    <ul>
+      <li>앱이 Background 상태로 전환된 직후 호출 (Inactive → Background)</li>
+      <li>특별한 처리가 없으면 Suspended 상태로 전환됩니다.</li>
+      <li>주로 앱이 종료되기 전에 중요 데이터를 저장하거나 공유 자원을 해제하는 등을 위한 코드를 작성합니다.</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">applicationWillEnterForeground(_:)</code></strong>
+    <ul>
+      <li>앱이 Background에서 Foreground로 돌아오기 직전 호출 (Background → Foreground)</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<p><img src="/images/2020-02-20/app_based_state_transition_2.jpeg" alt="app_based_state_transition" /></p>
+
+<hr />
+
+<h5 id="reference">Reference</h5>
+<ul>
+  <li><a href="https://velog.io/@cskim/iOS-App-생명주기Life-Cycle">[iOS] App 생명주기(Life Cycle)</a></li>
+  <li><a href="https://jinshine.github.io/2018/05/28/iOS/앱의%20생명주기(App%20Life%20Cycle)와%20앱의%20구조(App%20Structure)/">[iOS] 앱의 생명주기(App Life Cycle)와 앱의 구조(App Structure)</a></li>
+  <li><a href="https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle">Managing Your App’s Life Cycle</a></li>
+</ul>
+
+<hr />
+
+<h5 id="ios-앱-생명주기">iOS 앱 생명주기</h5>
+<ol>
+  <li><a href="/2020/02/20/iOS-앱-생명주기">iOS 앱 생명주기</a></li>
+  <li><a href="/2020/02/20/앱의-상태변화-&amp;-Delegate-Call"><strong>앱의 상태변화 &amp; Delegate Call</strong></a></li>
+  <li><a href="">View Controller 생명주기</a></li>
+  <li><a href="/2020/02/20/AppDelegate-&amp;-SceneDelegate">AppDelegate &amp; SceneDelegate</a></li>
+</ol>
+:ET
